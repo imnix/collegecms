@@ -19,7 +19,7 @@
    </div>
     @include('components.footer') 
 </div>
-<script src="{{ asset('js/cms.js') }}" defer></script>
+<script src="/js/cms.js" defer></script>
 </body>
 </html>
 
