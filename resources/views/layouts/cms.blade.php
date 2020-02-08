@@ -6,7 +6,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="{{ asset('css/cms.css') }}" rel="stylesheet">
+    <link href="/css/cms.css" rel="stylesheet">
+   <!--  <link href="{{ asset('css/cms.css') }}" rel="stylesheet"> -->
 </head>
 <body class="hold-transition layout-top-nav">
     <div class="wrapper"> 
