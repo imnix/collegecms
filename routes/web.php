@@ -19,3 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/faculties', 'FacultyController@index')->name('faculties'); 
+Route::post('/faculty/add', 'FacultyController@store')->name('createfaculties'); 

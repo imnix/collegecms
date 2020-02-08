@@ -4,43 +4,46 @@
 <div class="container pt-2">
  <div class="card">
   <div class="card-header">
-    <h3 class="card-title">Faculty List</h3>
+    <h3 class="card-title"><span>Faculty List</span></h3>
+    <button class="btn btn-secondary float-right" data-toggle="modal" data-target="#modal-faculty">Add new Faculty</button>
   </div>
   <!-- /.card-header -->
   <div class="card-body">
     <table id="idTblFaculty" class="table table-bordered table-striped">
       <thead>
         <tr>
-          <th>Rendering engine</th>
-          <th>Browser</th>
-          <th>Platform(s)</th>
-          <th>Engine version</th>
-          <th>CSS grade</th>
+          <th>Sr No</th>
+          <th>Faculty</th>
+          <th>Action</th> 
         </tr>
       </thead>
       <tbody>
+        @php
+          $count =0;
+        @endphp
+        @foreach($faculties as $faculty)
         <tr>
-          <td>Trident</td>
-          <td>Internet
-            Explorer 4.0
-          </td>
-          <td>Win 95+</td>
-          <td> 4</td>
-          <td>X</td>
+          <td>{{++$count}}</td>
+          <td>{{$faculty->title}}</td>
+          <td><a class="btn" href="/" style="cursor: pointer;"><i class="fas fa-pencil-alt"></i></a></td>
         </tr>
+        @endforeach
       </tbody>
     </table>
   </div>
 </div>
 </div>
+
+@include('components.modal-faculty')
+
 @endsection
 
 @section('js')
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 <script defer type="text/javascript">
  $(function () {
-    $("#idTblFaculty").DataTable();
-  });
+  $("#idTblFaculty").DataTable();
+});
 </script>
 @endsection
 

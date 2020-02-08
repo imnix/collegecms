@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\master\faculty;
+use App\Models\master\Faculty;
 use Illuminate\Http\Request;
 
 class FacultyController extends Controller
@@ -14,7 +14,8 @@ class FacultyController extends Controller
      */
     public function index()
     {
-        return view('cms.master.faculty');
+        
+        return view('cms.master.faculty')->with('faculties',Faculty::all());
     }
 
     /**
@@ -24,7 +25,7 @@ class FacultyController extends Controller
      */
     public function create()
     {
-        //
+          
     }
 
     /**
@@ -35,7 +36,11 @@ class FacultyController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if ($request->faculty !=null) {
+             $faculty = Faculty::firstOrCreate(['title' => $request->faculty ]);
+        }
+       
+        return view('cms.master.faculty')->with('faculties',Faculty::all());
     }
 
     /**
