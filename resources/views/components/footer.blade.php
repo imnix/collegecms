@@ -1,4 +1,4 @@
- <footer class="main-footer">
+ <footer class="main-footer" style="bottom: 0;position: fixed;width: 100%">
     <div class="float-right d-none d-sm-inline">
       <i class="fab fa-youtube"></i><i class="fab fa-whatsapp"></i><i class="fab fa-facebook-square"></i>
   </div>

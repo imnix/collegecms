@@ -3,7 +3,7 @@ return [
 	'navs' =>[
 		'Dashboard'=>[
 			'dopnavs'=>false,
-			'link'=>'/xyz',
+			'link'=>'/',
 		],
 		'Master'=>[
 			'dopnavs'=>true,

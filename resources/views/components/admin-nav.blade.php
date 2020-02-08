@@ -1,7 +1,7 @@
- <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+ <nav class="main-header navbar navbar-expand-md navbar-light navbar-dark">
   <div class="container">
     <a href="{{ url('/') }}" class="navbar-brand">
-      <span class="brand-text font-weight-light">{{ config('app.name', 'scrima') }}</span>
+      <img src="http://college.scrimatec.com/assets/images/logo_new.png" alt="" height="30">
     </a>
 
     <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,7 +10,7 @@
 
     <div class="collapse navbar-collapse order-3" id="navbarCollapse">
       <!-- Left navbar links -->
-      <ul class="navbar-nav">
+      <ul class="navbar-nav  ml-auto">
         @foreach(config('cms.navs') as $navtitle => $dropnavs)
         @if($dropnavs['dopnavs'])
         <li class="nav-item dropdown">

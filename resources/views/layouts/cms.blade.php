@@ -7,14 +7,15 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="/css/cms.css" rel="stylesheet">
-   <!--  <link href="{{ asset('css/cms.css') }}" rel="stylesheet"> -->
 </head>
 <body class="hold-transition layout-top-nav">
     <div class="wrapper"> 
      @include('components.admin-nav') 
      <div class="content-wrapper"> 
         <div class="content">
-           @yield('content')
+          <div  style="min-height: 90vh;background-color: #3333">
+              @yield('content')
+          </div>
        </div>
    </div>
     @include('components.footer') 
