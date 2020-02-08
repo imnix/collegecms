@@ -9,7 +9,7 @@ return [
 			'dopnavs'=>true,
 			'navs'=>[[
 				'title'=>'Faculty',
-				'link'=>"/abc"
+				'link'=>"/faculties"
 			],
 			[
 				'title'=>'Fees Category',

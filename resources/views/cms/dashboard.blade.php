@@ -1,7 +1,7 @@
 @extends('layouts.cms')
 
 @section('content')
-<div class="container p-2">
+<div class="container pt-2">
    <!-- Info boxes -->
    <div class="row">
       <div class="col-12 col-sm-6 col-md-3">
